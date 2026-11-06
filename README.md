@@ -17,8 +17,12 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 ## React Router
+
 React Router is a library that provides routing capabilities for React applications.
 Routing means handling navigation between different views.
 
 installed with **npm install react-router-dom**
 
+## PokeAPI
+
+PokeAPI is a full RESTful API linked to an extensive database detailing everything about the Pokémon main game series. Check out [PokeAPI](https://pokeapi.co/)
