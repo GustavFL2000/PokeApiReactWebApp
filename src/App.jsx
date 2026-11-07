@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Info from "./pages/Info";
 import Pokemons from "./pages/Pokemons";
+import PokemonDetails from "./pages/PokemonDetails"
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -17,6 +18,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Pokemons" element={<Pokemons />} />
+
+          <Route path="/Pokemons/:name" element={<PokemonDetails />} />
+
           <Route path="/Info" element={<Info />} />
         </Routes>
       </main>
