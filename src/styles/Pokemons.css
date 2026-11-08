@@ -1,0 +1,39 @@
+
+.pokemon img {
+    width: 100px;
+    height: 100px;
+}
+
+.pokemon h3 {
+    margin: 5px 0;
+    color:black;
+    text-align: center;
+}
+
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 40px;
+    align-items: start;
+    padding-left: 20px;
+}
+
+.pokemon-generation {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding-left: 20px;
+    align-content: start;
+}
+
+.pokemon-generation h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}

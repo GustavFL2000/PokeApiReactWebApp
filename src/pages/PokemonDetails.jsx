@@ -1,6 +1,7 @@
 import { useParams } from 'react-router';
 import { useEffect, useState } from 'react';
 import { get } from '../services/PokeService';
+import '../styles/PokemonDetails.css';
 
 export default function PokemonDetails() {
     const { name } = useParams();
@@ -20,7 +21,7 @@ export default function PokemonDetails() {
     if (!pokemon) return <p>Vent venligst...</p>;
 
     return (
-        <div>
+        <div className='AllDetails'>
             <h1>{pokemon.name}</h1>
 
             <img src={pokemon.sprites.front_default} />
