@@ -4,7 +4,7 @@ import { get } from '../services/PokeService'
 import { Link } from 'react-router';
 
 function Pokemons() {
-    const apiURL = 'https://pokeapi.co/api/v2/pokemon'
+    const apiURL = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=151' //Her kan der ændres hvor mange der er i listen med limit (Der kan også gives et offset (derfor kan man jo lave lister baseret på fx generationer))
     const [pokemon, setPokemon] = useState([]);
 
     useEffect(() => {
@@ -23,7 +23,7 @@ function Pokemons() {
         <div>
             {pokemon.map(p => (
                 <Link to={`/Pokemons/${p.name}`} key={p.name}>
-                    <h3>{p.name}</h3>
+                    <h3>{p.name.toUpperCase()}</h3>
                 </Link>
             ))}
         </div>

@@ -1,0 +1,28 @@
+.header {
+  background-color: #4f9edf;
+  justify-content: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.header nav {
+  display:flex; 
+}
+
+.header nav a {
+  padding: 20px 15px;
+  text-decoration: none;
+  color: white;
+  background: #4f9edf;
+  transition: all 0.3s ease;
+}
+
+.header nav a:hover {
+  background: #4890ca;
+}
+
+.header nav a.active {
+  background: #376e9b;
+}
